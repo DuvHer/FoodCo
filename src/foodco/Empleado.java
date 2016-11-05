@@ -14,7 +14,7 @@ public class Empleado {
     private int id;
     private String experiencias;
     private Linea linea;
-    private String cargo;
+    String cargo;
 
     public Empleado(String name, int id, String experiencias, Linea linea, String cargo) {
         this.name = name;
