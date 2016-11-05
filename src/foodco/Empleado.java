@@ -14,12 +14,14 @@ public class Empleado {
     private int id;
     private String experiencias;
     private Linea linea;
+    private String cargo;
 
-    public Empleado(String name, int id, String experiencias, Linea linea) {
+    public Empleado(String name, int id, String experiencias, Linea linea, String cargo) {
         this.name = name;
         this.id = id;
         this.experiencias = experiencias;
         this.linea = linea;
+        this.cargo= cargo;
     }
     public int SolicitudVacaciones(){
        return 0;             

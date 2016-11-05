@@ -19,7 +19,7 @@ public class Linea extends Fabrica {
     private Empleado[] empleadosL;
 
     public Linea(Empleado[] empleados, String nombre, String nombref,int id, String nombreL, ArrayList<RegistroProduccion> registro, Supervisor supervisor) {
-        super(empleados, nombre, nombref);
+        super(nombref);
         this.id = id;
         this.nombre = nombreL;
         this.registro = registro;
