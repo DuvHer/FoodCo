@@ -5,31 +5,47 @@
  */
 package foodco;
 
+import java.util.ArrayList;
+
 /**
  *
- * @author DuvHer
+ * @author faris
  */
-public class Linea extends Fabrica{
-    private String fabrica;
-    private int numero;
-    
-    public Linea InicioTurno(){
-        return null;    
+public class Linea extends Fabrica {
+    private int id;
+    private String nombre;
+    private ArrayList<RegistroProduccion> registro;
+    private Supervisor supervisor;
+    private Empleado[] empleadosL;
+
+    public Linea(Empleado[] empleados, String nombre, String nombref,int id, String nombreL, ArrayList<RegistroProduccion> registro, Supervisor supervisor) {
+        super(empleados, nombre, nombref);
+        this.id = id;
+        this.nombre = nombreL;
+        this.registro = registro;
+        this.supervisor = supervisor;
+        this.empleadosL=new Empleado[20];
+    }
+    public int InicioTurno(){
+        return 0;    
     }
     
-    public Linea RegistroEmpleadoIn(){
-        return null;    
+    public int RegistroEmpleadoIn(){
+        return 0;    
     }
     
-    public Linea RegistroEmpleadoOut(){
-        return null;    
+    public int RegistroEmpleadoOut(){
+        return 0;    
     }
     
-    public Linea PausarLinea(){
-        return null;    
+    public int PausarLinea(){
+        return 0;    
     }
     
-    public Linea RegistroProblema(){
-        return null;    
+    public int RegistroProblema(){
+        return 0;    
     }
+    
+   
+    
 }

@@ -9,15 +9,26 @@ package foodco;
  *
  * @author DuvHer
  */
-public class Empleado extends Linea{
-    private String nombre;
-    private int ID;
-    
-    public Empleado SolicitudVacaciones(){
-       return null;             
+public class Empleado {
+    private String name;
+    private int id;
+    private String experiencias;
+    private Linea linea;
+
+    public Empleado(String name, int id, String experiencias, Linea linea) {
+        this.name = name;
+        this.id = id;
+        this.experiencias = experiencias;
+        this.linea = linea;
+    }
+    public int SolicitudVacaciones(){
+       return 0;             
     }
     
-    public Empleado SolicitudEnfermedad(){
-       return null;             
+    public int SolicitudEnfermedad(){
+       return 0;             
     }
+
+    
+    
 }

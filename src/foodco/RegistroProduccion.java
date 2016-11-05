@@ -5,15 +5,12 @@
  */
 package foodco;
 
-import java.util.*;
-
 /**
  *
  * @author DuvHer
  */
 public class RegistroProduccion extends javax.swing.JFrame {
-    private String supervisor;
-    private Date fecha;
+
     /**
      * Creates new form RegistroProduccion
      */
@@ -83,12 +80,6 @@ public class RegistroProduccion extends javax.swing.JFrame {
         jLabel8.setText("Inicio de serie");
 
         jLabel9.setText("Fin de serie");
-
-        txtLínea.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtLíneaActionPerformed(evt);
-            }
-        });
 
         txtSupervisor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -281,10 +272,6 @@ public class RegistroProduccion extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtVerificadoActionPerformed
 
-    private void txtLíneaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtLíneaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtLíneaActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -354,5 +341,4 @@ public class RegistroProduccion extends javax.swing.JFrame {
     private javax.swing.JTextField txtTrabajo;
     private javax.swing.JTextField txtVerificado;
     // End of variables declaration//GEN-END:variables
-
 }
