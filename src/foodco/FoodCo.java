@@ -1,6 +1,9 @@
 package foodco;
 //"PRUEBA"
 
+import java.util.ArrayList;
+
+
 //"Prueba DOS"
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -15,11 +18,39 @@ package foodco;
  */
 public class FoodCo {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    private Empleado empleados[];
+    private String nombre;
+    private Fabrica [] fabrica;
+    private ArrayList<Empleado> supervisor;
+
+    public FoodCo(Empleado[] empleados, String nombre) {
+        this.empleados = empleados;
+        this.nombre = nombre;
+        this.fabrica= new Fabrica[3];
+        this.supervisor=new ArrayList<Empleado>();
+    }
+   
+    public Empleado[] AsignarEmpleadosFabrica(){
+        return null;
+    }
+    public String RegistroEmpleadosDisponibles(){
+        return null;    
+    }
+    
+    public String RegistroEmpleadosNoDisponibles(){
+        return null;    
+    }
+    
+    public String RegistroEmpleadosProbablementeDisponibles(){
+        return null;    
+    }
+    
+    public String AlmacenarSolicitudesVacaciones(){
+        return null;    
+    }
+    
+    public String AlmacenarSolicitudesEnfermedad(){
+        return null;    
     }
     
 }

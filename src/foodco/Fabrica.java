@@ -10,12 +10,14 @@ package foodco;
  * @author faris
  */
 public class Fabrica extends FoodCo{
-    private String nombre;
+    private String nombref;
 
-    public Fabrica(String nombref) {
-        super();
-        this.nombre=nombref;
+    public Fabrica(Empleado[] empleados, String nombre,String nombref) {
+        super(empleados, nombre);
+        this.nombref=nombref;
+        
     }
+
     public Empleado[] AsignarLineaEmpleadosSemana(){
         return null;    
     }

@@ -5,16 +5,18 @@
  */
 package foodco;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author DuvHer
  */
-public class Empleado {
+public class Empleado implements PersonalNoDisponible {
     private String name;
     private int id;
     private String experiencias;
     private Linea linea;
-    String cargo;
+    private String cargo;
 
     public Empleado(String name, int id, String experiencias, Linea linea, String cargo) {
         this.name = name;
@@ -29,6 +31,16 @@ public class Empleado {
     
     public int SolicitudEnfermedad(){
        return 0;             
+    }
+
+    @Override
+    public void enfermo() {
+        JOptionPane.showMessageDialog(null,"Empleado enfermo");
+    }
+
+    @Override
+    public void vacaciones() {
+        JOptionPane.showMessageDialog(null,"Empleado vacaciones");
     }
 
     
